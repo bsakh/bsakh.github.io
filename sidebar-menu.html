@@ -1,0 +1,28 @@
+<div class="sidebar-menu">
+    <div class="sidebar-menu__row">
+        <div class="sidebar-menu__item" ng-class="{active : menuItem.isSet(1)}">
+            <a class="sidebar-menu__link" href="#" ng-click="menuItem.setMenu(1)">Artists</a>
+        </div>
+    </div>
+    <div class="sidebar-menu__row">
+        <div class="sidebar-menu__item" ng-class="{active : menuItem.isSet(2)}">
+            <a class="sidebar-menu__link" href="#" ng-click="menuItem.setMenu(2)">Albums</a>
+        </div>
+    </div>
+    <div class="sidebar-menu__row" ng-controller="PlaylistController as playlistCtrl">
+        <h3 class="sidebar-menu__title">Playlist</h3>
+        <ul class="sidebar-menu__list">
+            <li class="sidebar-menu__item" ng-repeat="playlist in playlistCtrl.playlists.playlists">
+                <a class="sidebar-menu__link" href="#">{{playlist.name}}</a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a class="sidebar-menu__link" href="#">{{playlistCtrl.playlist.name}}</a>
+            </li>
+
+        </ul>
+        <form name="Form" ng-submit="playlistCtrl.addPlaylist(playlistCtrl.playlist.name)">
+          <input class="radius" ng-model="playlistCtrl.playlist.name" type="text" placeholder="Название" />
+          <input class="radius" type="submit" value="Добавить плейлист" />
+        </form>
+    </div>
+</div>

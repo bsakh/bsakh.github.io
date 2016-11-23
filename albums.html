@@ -1,0 +1,50 @@
+<div class="playlist__row" ng-repeat="artist in player.library.artists">
+  <div ng-repeat="album in artist.albums">
+      <div class="playlist__album">
+          <img class="playlist__image" ng-src="{{album.cover_url}}" alt="cover"><div class="playlist__desc">
+          <h2 class="playlist__desc-album">{{album.name}}</h2>
+          <div class="playlist__desc-artist">{{artist.name}}</div>
+          <div class="playlist__desc-year">{{album.year}}</div>
+      </div>
+          <ul class="playlist__list">
+              <!-- <li class="playlist__item">
+                  <div class="playlist__song">
+                      <a class="playlist__song-title" href="#">Song 1</a><span class="playlist__song-album">Album 1</span>
+                  </div>
+                  <div class="playlist__add">
+                      <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                  </div>
+                  <div class="playlist__pane" style="display: block; right: 5px; top: 29px;">
+                      <div class="playlist__pane-title">Add to playlist</div>
+                      <div class="playlist__pane-item">
+                          <a class="playlist__pane-link" href="#">playlist 1</a>
+                      </div>
+                      <div class="playlist__pane-item">
+                          <a class="playlist__pane-link" href="#">playlist 2</a>
+                      </div>
+                  </div>
+              </li> -->
+              <li class="playlist__item" ng-repeat="song in album.songs">
+                  <div class="playlist__song">
+                      <a class="playlist__song-title" href="#" ng-click="playStatus.getPlaySong($event, song.name, album.name, $index + 1)" >{{$index + 1}}: {{song.name}}</a><span class="playlist__song-album">{{album.name}}</span>
+                  </div>
+                  <div class="playlist__add">
+                      <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                  </div>
+                  <div class="playlist__pane">
+                      <div class="playlist__pane-title">Add to playlist</div>
+                      <div class="playlist__pane-item">
+                          <a class="playlist__pane-link" href="#">playlist 1</a>
+                      </div>
+                      <div class="playlist__pane-item">
+                          <a class="playlist__pane-link" href="#">playlist 2</a>
+                      </div>
+                      <div class="playlist__pane-item">
+                          <a class="playlist__pane-link" href="#">playlist 3</a>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+    </div>
+</div>

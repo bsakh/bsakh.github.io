@@ -1,0 +1,28 @@
+<div class="player">
+    <div class="player__buttons">
+        <div class="player__btn player__btn_type_prev" ng-click="playStatus.processing($event, 1)">
+            <span class="icon-playback-rewind"></span>
+        </div><div class="player__btn player__btn_type_play" ng-click="playStatus.processing($event, 2)">
+            <span class="icon-playback-play"></span>
+        </div><div class="player__btn player__btn_type_next" ng-click="playStatus.processing($event, 3)">
+            <span class="icon-playback-fast-forward"></span>
+        </div>
+    </div><div class="player__progress">
+
+        <div class="progress">
+            <div class="progress__bar">
+                <div class="progress__bar-text">{{playStatus.playIndex}}: {{playStatus.playSong}}</div>
+                <div class="progress__bar-line">
+                    <div class="progress-bar">
+                        <span class="progress-bar__progress" style="width: 23%;"></span>
+                        <span class="progress-bar__handler" style="left: 23%;"></span>
+                    </div>
+                </div>
+                <div class="progress__bar-text progress__bar-text_down">{{playStatus.playAlbum}}</div>
+            </div><div class="progress__volume">
+                <span class="icon-unmute"></span>
+            </div>
+        </div>
+
+    </div>
+</div>

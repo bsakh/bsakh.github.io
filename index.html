@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="musicPlayer">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+</head>
+<body>
+<div class="page" ng-controller="PlayerController as player">
+    <div class="page__content">
+        <div class="page__sidebar">
+            <div class="page__sidebar-row">
+
+                <div class="sidebar-search">
+                    <div class="sidebar-search__icon icon-search"></div>
+                    <input class="sidebar-search__bar" type="text">
+                </div>
+
+            </div>
+            <div class="page__sidebar-row">
+                <!-- Sidebar panel: Category, Playlists and Add new playlists  -->
+                <sidebar></sidebar>
+            </div>
+        </div><div class="page__playlist">
+
+            <div class="playlist">
+                <!-- Upload file library  -->
+                <div class="playlist__import" ng-controller="UploadFileController">
+                    <div class="playlist__link"><span class="playlist__link-icon icon-move-down"></span>Импортировать библиотеку – <a href="library.json">library.json</a></div>
+                    <input type="file" id="file" name="file"/>
+                    <input class="radius" type="submit" ng-click="uploadFile()" value="Загрузить"></button>
+                </div>
+
+                <div class="playlist__content">
+                    <!-- View for Artists -->
+                    <artists ng-show="menuItem.isSet(1)"></artists>
+
+                    <!-- View for Albums -->
+                    <albums ng-show="menuItem.isSet(2)"></albums>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page__player">
+        <!-- Player panel -->
+        <panel></panel>
+    </div>
+</div>
+</body>
+</html>

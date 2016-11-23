@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="musicPlayer">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div class="page" ng-controller="PlayerController as player">
+    <div class="page__content">
+        <div class="page__sidebar">
+            <div class="page__sidebar-row">
+
+                <div class="sidebar-search">
+                    <div class="sidebar-search__icon icon-search"></div>
+                    <input class="sidebar-search__bar" type="text">
+                </div>
+
+            </div>
+            <div class="page__sidebar-row">
+
+                <div class="sidebar-menu">
+                    <div class="sidebar-menu__row">
+                        <div class="sidebar-menu__item">
+                            <a class="sidebar-menu__link" href="#">Artists</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu__row">
+                        <div class="sidebar-menu__item  sidebar-menu__item_active">
+                            <a class="sidebar-menu__link" href="#">Albums</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu__row">
+                        <h3 class="sidebar-menu__title">Playlist</h3>
+                        <ul class="sidebar-menu__list">
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 1</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 2</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 3</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 4</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 5</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 6</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 7</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 8</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 9</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 10</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 11</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 12</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 13</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 14</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 15</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">playlist 16</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <a class="sidebar-menu__link" href="#">new</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div><div class="page__playlist">
+
+            <div class="playlist">
+                <div class="playlist__import">
+                    <a href="#" class="playlist__link"><span class="playlist__link-icon icon-move-down"></span>Импортировать библиотеку</a>
+                    <input id="the-file-input" type="file">
+                </div>
+                <div class="playlist__content">
+                    <div class="playlist__row">
+                        <ul class="playlist__list">
+                                <li class="playlist__item">
+                                    <div class="playlist__song">
+                                        <a class="playlist__song-title" href="#">Song 1</a><span class="playlist__song-album">Album 1</span>
+                                    </div>
+                                    <div class="playlist__add">
+                                        <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                                    </div>
+                                    <div class="playlist__pane" style="display: block; right: 5px; top: 29px;">
+                                        <div class="playlist__pane-title">Add to playlist</div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 1</a>
+                                        </div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 2</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="playlist__item">
+                                    <div class="playlist__song">
+                                        <a class="playlist__song-title" href="#">Song 2</a><span class="playlist__song-album">Album 1</span>
+                                    </div>
+                                    <div class="playlist__add">
+                                        <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                                    </div>
+                                    <div class="playlist__pane">
+                                        <div class="playlist__pane-title">Add to playlist</div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 1</a>
+                                        </div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 2</a>
+                                        </div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 3</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="playlist__item">
+                                    <div class="playlist__song">
+                                        <a class="playlist__song-title" href="#">Song 3</a><span class="playlist__song-album">Album 1</span>
+                                    </div>
+                                    <div class="playlist__add">
+                                        <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                                    </div>
+                                    <div class="playlist__pane">
+                                        <div class="playlist__pane-title">Add to playlist</div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 1</a>
+                                        </div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 2</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="playlist__item">
+                                    <div class="playlist__song">
+                                        <a class="playlist__song-title" href="#">Song 4</a><span class="playlist__song-album">Album 1</span>
+                                    </div>
+                                    <div class="playlist__add">
+                                        <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                                    </div>
+                                    <div class="playlist__pane">
+                                        <div class="playlist__pane-title">Add to playlist</div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 1</a>
+                                        </div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 2</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="playlist__item">
+                                    <div class="playlist__song">
+                                        <a class="playlist__song-title" href="#">Song 5</a><span class="playlist__song-album">Album 1</span>
+                                    </div>
+                                    <div class="playlist__add">
+                                        <div class="playlist__add-icon"><span class="icon-plus"></span></div>
+                                    </div>
+                                    <div class="playlist__pane">
+                                        <div class="playlist__pane-title">Add to playlist</div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 1</a>
+                                        </div>
+                                        <div class="playlist__pane-item">
+                                            <a class="playlist__pane-link" href="#">playlist 2</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page__player">
+        <div class="player">
+            <div class="player__buttons">
+                <div class="player__btn player__btn_type_prev">
+                    <span class="icon-playback-rewind"></span>
+                </div><div class="player__btn player__btn_type_play">
+                    <span class="icon-playback-play"></span>
+                </div><div class="player__btn player__btn_type_next">
+                    <span class="icon-playback-fast-forward"></span>
+                </div>
+            </div><div class="player__progress">
+
+                <div class="progress">
+                    <div class="progress__bar">
+                        <div class="progress__bar-text">Song – Name</div>
+                        <div class="progress__bar-line">
+                            <div class="progress-bar">
+                                <span class="progress-bar__progress" style="width: 23%;"></span>
+                                <span class="progress-bar__handler" style="left: 23%;"></span>
+                            </div>
+                        </div>
+                        <div class="progress__bar-text progress__bar-text_down">Artist – Album</div>
+                    </div><div class="progress__volume">
+                        <span class="icon-unmute"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

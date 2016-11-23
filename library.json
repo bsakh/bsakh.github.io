@@ -1,0 +1,196 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "The Beatles",
+      "albums": [
+        {
+          "id": 1,
+          "name": "Sgt. Pepper’s Lonely Hearts Club Band",
+          "year": 1967,
+          "cover_url": "https://upload.wikimedia.org/wikipedia/ru/9/9f/The_Beatles_-_Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg",
+          "songs": [
+            {
+              "id": 1,
+              "name": "Sgt. Pepper’s Lonely Hearts Club Band"
+            },
+            {
+              "id": 2,
+              "name": "With a Little Help from My Friends"
+            },
+            {
+              "id": 3,
+              "name": "Lucy in the Sky with Diamonds"
+            },
+            {
+              "id": 4,
+              "name": "Getting Better"
+            },
+            {
+              "id": 5,
+              "name": "Fixing a Hole"
+            },
+            {
+              "id": 6,
+              "name": "She’s Leaving Home"
+            },
+            {
+              "id": 7,
+              "name": "Being for the Benefit of Mr. Kite!"
+            },
+            {
+              "id": 8,
+              "name": "Within You Without You"
+            },
+            {
+              "id": 9,
+              "name": "When I’m Sixty Four"
+            },
+            {
+              "id": 10,
+              "name": "Lovely Rita"
+            },
+            {
+              "id": 11,
+              "name": "Good Morning Good Morning"
+            },
+            {
+              "id": 12,
+              "name": "Sgt. Pepper’s Lonely Hearts Club Band (Reprise)"
+            },
+            {
+              "id": 13,
+              "name": "A Day in the Life"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "A Hard Day’s Night",
+          "year": 1964,
+          "cover_url": "https://upload.wikimedia.org/wikipedia/ru/8/8f/The_Beatles_-_A_Hard_Day%27s_Night.jpg",
+          "songs": [
+            {
+              "id": 14,
+              "name": "A Hard Day’s Night"
+            },
+            {
+              "id": 15,
+              "name": "I Should Have Known Better"
+            },
+            {
+              "id": 16,
+              "name": "If I Fell"
+            },
+            {
+              "id": 17,
+              "name": "I’m Happy Just to Dance with You"
+            },
+            {
+              "id": 18,
+              "name": "And I Love Her"
+            },
+            {
+              "id": 19,
+              "name": "Tell Me Why"
+            },
+            {
+              "id": 20,
+              "name": "Can’t Buy Me Love"
+            },
+            {
+              "id": 21,
+              "name": "Any Time at All"
+            },
+            {
+              "id": 22,
+              "name": "I’ll Cry Instead"
+            },
+            {
+              "id": 23,
+              "name": "Things We Said Today"
+            },
+            {
+              "id": 24,
+              "name": "When I Get Home"
+            },
+            {
+              "id": 25,
+              "name": "You Can’t Do That"
+            },
+            {
+              "id": 26,
+              "name": "I’ll Be Back"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "The Rolling Stones",
+      "albums": [
+        {
+          "id": 3,
+          "name": "Bridges to Babylon",
+          "year": 1997,
+          "cover_url": "https://upload.wikimedia.org/wikipedia/ru/2/29/Bridges_to_Babylon.jpg",
+          "songs": [
+            {
+              "id": 27,
+              "name": "Flip the Switch"
+            },
+            {
+              "id": 28,
+              "name": "Anybody Seen My Baby?"
+            },
+            {
+              "id": 29,
+              "name": "Low Down"
+            },
+            {
+              "id": 30,
+              "name": "Already Over Me"
+            },
+            {
+              "id": 31,
+              "name": "Gunface"
+            },
+            {
+              "id": 32,
+              "name": "You Don't Have to Mean It"
+            },
+            {
+              "id": 33,
+              "name": "Out of Control"
+            },
+            {
+              "id": 34,
+              "name": "Saint of Me"
+            },
+            {
+              "id": 35,
+              "name": "Might as Well Get Juiced"
+            },
+            {
+              "id": 36,
+              "name": "Always Suffering"
+            },
+            {
+              "id": 37,
+              "name": "Too Tight"
+            },
+            {
+              "id": 38,
+              "name": "Thief in the Night"
+            },
+            {
+              "id": 39,
+              "name": "How Can I Stop"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
